@@ -1,0 +1,140 @@
+.hero-image {
+  height: calc(100vh - 70px);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hero-overlay {
+  background: rgba(34, 49, 63, 0.7);
+  width: 100%;
+  height: 100%;
+  padding: 0 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hero-content {
+  z-index: 1;
+  text-align: center;
+}
+
+.hero-content h2 {
+  font-size: 3rem;
+  margin: 0;
+  font-weight: bold;
+  color: white;
+}
+
+.hero-content p {
+  font-size: 1.25rem;
+  margin: 10px 0;
+  color: white;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1.25rem; 
+}
+
+.primary-button, .secondary-button {
+  flex: 1;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.primary-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+.primary-button:hover {
+  background-color: #45a049;
+}
+
+.secondary-button {
+  background-color: transparent;
+  color: white;
+  border: 2px solid #4caf50;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.secondary-button:hover {
+  background-color: #4caf50;
+  color: white;
+}
+
+.side-icons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 4rem;
+  position: absolute;
+  bottom: 20px;
+}
+
+.icon {
+  text-align: center;
+  color: white;
+}
+
+.left-icon {
+  margin-right: auto;
+}
+
+.right-icon {
+  margin-left: auto;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .hero-image {
+    height: calc(100vh - 50px);
+  }
+
+  .hero-overlay {
+    padding: 0 2rem;
+  }
+
+  .hero-content h2 {
+    font-size: 2.5rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .primary-button,
+  .secondary-button {
+    width: 100%;
+    padding: 12px 0;
+  }
+
+  .side-icons {
+    flex-direction: column; 
+    align-items: center;
+    bottom: 10px; 
+    padding: 0 2rem;
+  }
+
+  .icon {
+    margin: 0.5rem 0;
+  }
+}
