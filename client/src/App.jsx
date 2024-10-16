@@ -7,6 +7,11 @@ import Login from "./pages/LoginSignupPage/Login";
 import Signup from "./pages/LoginSignupPage/Signup";
 import Logout from "./pages/LoginSignupPage/Logout";
 import CarbonFootprintCalculator from "./pages/CarbonFootprintCalculator/CarbonFootprintCalculator";
+import Profile from "./pages/ProfilePage/Profile";
+import GlobalChallenges from "./components/GlobalChallenges/GlobalChallenges";
+import GlobalClimateDashboard from "./components/GlobalClimateDashboard/GlobalClimateDashboard";
+import MainContent from "./components/EcoHeroComponents/MainContent";
+import Chatbot from "./components/Chatbot/Chatbot";
 
 const App = () => {
   return (
@@ -19,10 +24,18 @@ const App = () => {
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
             <Route path="/logout" element={<Logout />} />
+            <Route path="/profile" element={<Profile />} />
+            <Route path="/leaderboard" element={<MainContent />} />
+            <Route path="/global" element={<GlobalChallenges />} />
+            <Route
+              path="/globaldashboard"
+              element={<GlobalClimateDashboard />}
+            />
             <Route path="/calculator" element={<CarbonFootprintCalculator />} />
           </Routes>
         </div>
         <Footer />
+        <Chatbot />
       </BrowserRouter>
     </div>
   );

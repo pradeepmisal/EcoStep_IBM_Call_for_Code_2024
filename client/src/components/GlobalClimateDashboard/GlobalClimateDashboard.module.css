@@ -1,0 +1,220 @@
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .header {
+    margin-bottom: 20px;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #0d1c0d;
+  }
+  
+  .searchContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .searchForm {
+    flex-grow: 1;
+    margin-right: 20px;
+  }
+  
+  .searchInputWrapper {
+    display: flex;
+    align-items: center;
+    background-color: #f7fcf7;
+    border-radius: 12px;
+    padding: 8px 16px;
+  }
+  
+  .searchIcon {
+    margin-right: 8px;
+  }
+  
+  .icon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .searchInput {
+    border: none;
+    background: transparent;
+    font-size: 16px;
+    color: #4f964f;
+    width: 100%;
+  }
+  
+  .searchControls {
+    display: flex;
+  }
+  
+  .controlButton {
+    background-color: #e8f2e8;
+    border: none;
+    border-radius: 12px;
+    padding: 8px;
+    margin-left: 8px;
+    cursor: pointer;
+  }
+  
+  .controlIcon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .sectionTitle {
+    font-size: 22px;
+    font-weight: 700;
+    color: #0d1c0d;
+    margin-bottom: 20px;
+  }
+  
+  .dataCards {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  
+  .dataCard {
+    background-color: #e8f2e8;
+    border-radius: 12px;
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .dataCardTitle {
+    font-size: 14px;
+    font-weight: 500;
+    color: #0d1c0d;
+    margin-right: 8px;
+  }
+  
+  .dataCardIcon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .chartContainer {
+    background-color: #f7fcf7;
+    border: 1px solid #d1e8d1;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .chartTitle {
+    font-size: 16px;
+    font-weight: 500;
+    color: #0d1c0d;
+    margin-bottom: 16px;
+  }
+  
+  .chart {
+    width: 100%;
+    height: auto;
+    margin-bottom: 16px;
+  }
+  
+  .chartLabels {
+    display: flex;
+    justify-content: space-between;
+    color: #4f964f;
+    font-size: 13px;
+    font-weight: 700;
+  }
+  
+  .resourceGrid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+  
+  .resourceCard {
+    flex: 1 0 calc(33.333% - 8px);
+    max-width: calc(33.333% - 8px);
+  }
+  
+  .resourceImage {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 12px;
+  }
+  
+  .resourceTitle {
+    font-size: 16px;
+    font-weight: 500;
+    color: #0d1c0d;
+  }
+  
+  .challengeCard {
+    display: flex;
+    align-items: center;
+    background-color: #f7fcf7;
+    padding: 12px 16px;
+    margin-bottom: 12px;
+  }
+  
+  .challengeIcon {
+    background-color: #e8f2e8;
+    border-radius: 8px;
+    padding: 12px;
+    margin-right: 16px;
+  }
+  
+  .challengeInfo {
+    flex-grow: 1;
+  }
+  
+  .challengeTitle {
+    font-size: 16px;
+    font-weight: 500;
+    color: #0d1c0d;
+    margin-bottom: 4px;
+  }
+  
+  .challengeMeta {
+    font-size: 14px;
+    color: #4f964f;
+  }
+  
+  .challengeVotes {
+    font-size: 16px;
+    font-weight: 400;
+    color: #0d1c0d;
+  }
+  
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+  
+  @media (max-width: 991px) {
+    .dashboard {
+      padding: 20px;
+    }
+  
+    .resourceCard {
+      flex: 1 0 calc(50% - 6px);
+      max-width: calc(50% - 6px);
+    }
+  }

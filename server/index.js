@@ -3,6 +3,7 @@ const express = require("express");
 var cors = require("cors");
 const userRoutes = require("./routes/userRoutes");
 const emissionRoutes = require("./routes/emissionRoutes");
+const chatbotRoutes = require("./routes/chatbotRoutes");
 const mongoDB = require("./config/database");
 const errorMiddleware = require("./middlewares/errorHandler");
 
@@ -20,6 +21,7 @@ app.use(cors());
 app.use(express.json());
 app.use("/api/user", userRoutes);
 app.use("/api/emission", emissionRoutes);
+app.use("/api/chatbot", chatbotRoutes);
 
 app.use(errorMiddleware);
 

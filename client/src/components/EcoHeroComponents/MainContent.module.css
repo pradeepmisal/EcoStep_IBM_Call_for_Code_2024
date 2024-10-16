@@ -1,0 +1,11 @@
+.mainContent {
+  display: flex;
+    padding: 20px 24px;
+  }
+  
+  @media (max-width: 991px) {
+    .mainContent {
+      padding: 20px;
+      max-width: 100%;
+    }
+  }

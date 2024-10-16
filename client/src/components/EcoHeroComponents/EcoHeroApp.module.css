@@ -1,0 +1,12 @@
+.ecoHeroApp {
+    font-family: 'Space Grotesk', -apple-system, Roboto, Helvetica, sans-serif;
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: #fff;
+  }
+  
+  @media (max-width: 991px) {
+    .ecoHeroApp {
+      max-width: 100%;
+    }
+  }

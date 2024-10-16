@@ -1,6 +1,8 @@
 import Hero from "../../components/Hero/Hero";
 import daily_carbon_footprint from "../../assets/images/daily_carbon_footprint.png";
 import sustainable_practices from "../../assets/images/sustainable-practices.png";
+import GlobalChallenges from "../../components/GlobalChallenges/GlobalChallenges";
+import LocalResources from "../../components/LocalResources/LocalResources";
 import "./Home.css";
 
 const Home = () => {
@@ -55,6 +57,9 @@ const Home = () => {
           </div>
         </section>
 
+        <GlobalChallenges />
+        <LocalResources />
+
         {/* Benefits Section */}
         <section className="benefits-section">
           <h2 className="section-title">
@@ -82,22 +87,6 @@ const Home = () => {
               </p>
             </div>
           </div>
-
-          {/* Resources Section */}
-          <section className="resources-section">
-            <h2 className="section-title">Explore More Resources</h2>
-            <div className="resources-list">
-              <a href="#" className="resource-item">
-                Blog Articles
-              </a>
-              <a href="#" className="resource-item">
-                Guides & E-books
-              </a>
-              <a href="#" className="resource-item">
-                Webinars
-              </a>
-            </div>
-          </section>
         </section>
 
         {/* Call to Action */}

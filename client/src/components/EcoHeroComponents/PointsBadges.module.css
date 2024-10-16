@@ -1,0 +1,23 @@
+.pointsBadges {
+    margin-bottom: 24px;
+  }
+  
+  .sectionTitle {
+    font-size: 18px;
+    font-weight: 700;
+    color: #0d1c12;
+    margin-bottom: 16px;
+  }
+  
+  .badgeContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  
+  .badge {
+    width: 210px;
+    height: 210px;
+    border-radius: 12px;
+    object-fit: contain;
+  }

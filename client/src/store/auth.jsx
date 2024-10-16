@@ -16,8 +16,12 @@ export const AuthProvider = ({ children }) => {
     setToken(null);
   };
 
+  const userData = token ? JSON.parse(atob(token.split(".")[1])) : null; // Extract user data from token
+
   return (
-    <AuthContext.Provider value={{ isLogedIn, logoutUser, storeTokenInLS }}>
+    <AuthContext.Provider
+      value={{ isLogedIn, logoutUser, storeTokenInLS, userData }}
+    >
       {children}
     </AuthContext.Provider>
   );

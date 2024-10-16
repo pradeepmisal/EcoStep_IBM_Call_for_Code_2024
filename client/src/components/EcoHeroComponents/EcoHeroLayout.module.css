@@ -1,0 +1,10 @@
+.ecoHeroLayout {
+    display: flex;
+    background-color: #fff;
+  }
+  
+  @media (max-width: 991px) {
+    .ecoHeroLayout {
+      flex-direction: column;
+    }
+  }
