@@ -1,0 +1,68 @@
+.redeemPoints {
+    margin-bottom: 24px;
+  }
+  
+  .sectionTitle {
+    font-size: 18px;
+    font-weight: 700;
+    color: #0d1c12;
+    margin-bottom: 16px;
+  }
+  
+  .redeemGrid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .redeemCard {
+    background-color: #f7fafa;
+    border: 1px solid #d1e5d9;
+    border-radius: 12px;
+    padding: 24px;
+    flex: 1 0 calc(33.333% - 10px);
+    min-width: 240px;
+  }
+  
+  .brandName {
+    font-size: 16px;
+    font-weight: 700;
+    color: #0d1c12;
+    margin-bottom: 4px;
+  }
+  
+  .pointsCost {
+    font-size: 36px;
+    font-weight: 700;
+    color: #0d1c12;
+    letter-spacing: -1px;
+    margin-bottom: 16px;
+  }
+  
+  .redeemButton {
+    background-color: #e8f2ed;
+    border: none;
+    border-radius: 20px;
+    color: #0d1c12;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .redeemButton:hover {
+    background-color: #d1e5d9;
+  }
+  
+  @media (max-width: 991px) {
+    .redeemCard {
+      flex: 1 0 calc(50% - 10px);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .redeemCard {
+      flex: 1 0 100%;
+    }
+  }

@@ -1,0 +1,104 @@
+.global-challenges {
+    padding: 60px 0;
+    background-color: #eafaf1;
+    text-align: center;
+  }
+  
+  .global-challenges h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #2d523f;
+  }
+  
+  .global-challenges p {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    color: #4a664e;
+  }
+  
+  .challenge-cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+  
+  .challenge-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .challenge-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .challenge-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #2d523f;
+  }
+  
+  .challenge-card p {
+    font-size: 1rem;
+    flex-grow: 1;
+    color: #6b8772;
+  }
+  
+  .challenge-btn {
+    text-decoration: none;
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+  }
+  
+  .challenge-btn:hover {
+    background-color: #218838;
+  }
+  
+  /* Media Queries for Mobile Responsiveness */
+  @media screen and (max-width: 768px) {
+    .global-challenges h2 {
+      font-size: 2rem;
+    }
+  
+    .global-challenges p {
+      font-size: 1rem;
+    }
+  
+    .challenge-cards {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+  
+    .challenge-card {
+      width: 90%; /* Take most of the screen on mobile */
+    }
+  
+    .challenge-card h3 {
+      font-size: 1.25rem;
+    }
+  
+    .challenge-card p {
+      font-size: 0.9rem;
+    }
+  
+    .challenge-btn {
+      font-size: 0.9rem;
+      padding: 8px 16px;
+    }
+  }
+  

@@ -1,0 +1,116 @@
+.local-resources {
+    padding: 60px 0;
+    background-color: #c8f7dc;
+    text-align: center;
+  }
+  
+  .local-resources h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #2d523f;
+  }
+  
+  .local-resources p {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    color: #4a664e;
+  }
+  
+  .resource-cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+  
+  .resource-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; /* Center content horizontally */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .resource-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .resource-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    object-fit: cover;
+    display: block;
+    /* Ensure the image is centered */
+  }
+  
+  .resource-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #2d523f;
+    text-align: center;
+  }
+  
+  .resource-card p {
+    font-size: 1rem;
+    flex-grow: 1;
+    color: #6b8772;
+    text-align: center;
+  }
+  
+  .resource-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+  }
+  
+  .resource-btn:hover {
+    background-color: #218838;
+  }
+  
+  /* Media Queries for Mobile Responsiveness */
+  @media screen and (max-width: 768px) {
+    .local-resources h2 {
+      font-size: 2rem;
+    }
+  
+    .local-resources p {
+      font-size: 1rem;
+    }
+  
+    .resource-cards {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+  
+    .resource-card {
+      width: 90%; /* Take most of the screen on mobile */
+    }
+  
+    .resource-card h3 {
+      font-size: 1.25rem;
+    }
+  
+    .resource-card p {
+      font-size: 0.9rem;
+    }
+  
+    .resource-btn {
+      font-size: 0.9rem;
+      padding: 8px 16px;
+    }
+  }
+  

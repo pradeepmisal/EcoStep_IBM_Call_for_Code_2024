@@ -1,0 +1,86 @@
+.profile-page {
+    display: flex;
+    padding: 20px;
+    background-color: #f5f5f5; /* Light background for better contrast */
+    height: 100vh; /* Full height for the profile page */
+}
+
+.profile-sidebar {
+    width: 250px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-right: 20px;
+}
+
+.profile-sidebar h3 {
+    margin-bottom: 20px;
+    color: #000; /* Color for the sidebar title */
+}
+
+.profile-sidebar-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; /* Reset margin */
+}
+
+.profile-sidebar-list li {
+    margin: 10px 0;
+}
+
+.profile-sidebar-list li a {
+    text-decoration: none;
+    color: #000; /* Base color */
+    font-size: 16px; /* Adjust font size as needed */
+    display: block; /* Make the entire area clickable */
+    padding: 10px; /* Add padding for a larger clickable area */
+    border-radius: 4px; /* Add some border radius for a nicer look */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.profile-sidebar-list li a:hover {
+    background-color: #e8f5e9; /* Light green background on hover */
+    color: #2e7d32; /* Darker green on hover */
+}
+
+.profile-details {
+    flex: 1;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 4rem;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-photo {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.profile-info h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.email {
+    color: #777;
+    font-size: 16px;
+}
+
+.profile-content h3 {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.profile-content p {
+    margin-top: 10px;
+    color: #555;
+}

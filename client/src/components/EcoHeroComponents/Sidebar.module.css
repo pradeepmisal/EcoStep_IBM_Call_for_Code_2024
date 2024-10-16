@@ -1,0 +1,56 @@
+.sidebar {
+    background-color: #f7fafa;
+    display: flex;
+    flex-direction: column;
+    min-width: 240px;
+    width: 320px;
+    padding: 16px;
+  }
+  
+  .userInfo {
+    margin-bottom: 16px;
+  }
+  
+  .userName {
+    font-size: 16px;
+    color: #0d1c12;
+    font-weight: 500;
+  }
+  
+  .userLevel {
+    font-size: 14px;
+    color: #4f966e;
+  }
+  
+  .sidebarNav {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .navItem {
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    margin-bottom: 8px;
+    color: #0d1c12;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  
+  .navItem:hover {
+    background-color: #e8f2ed;
+    border-radius: 20px;
+  }
+  
+  .navIcon {
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+  }
+  
+  @media (max-width: 991px) {
+    .sidebar {
+      width: 100%;
+    }
+  }

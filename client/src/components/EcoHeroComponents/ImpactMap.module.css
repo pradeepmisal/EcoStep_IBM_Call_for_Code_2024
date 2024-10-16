@@ -1,0 +1,16 @@
+.impactMap {
+    margin-bottom: 24px;
+  }
+  
+  .sectionTitle {
+    font-size: 18px;
+    font-weight: 700;
+    color: #0d1c12;
+    margin-bottom: 16px;
+  }
+  
+  .mapContainer {
+    height: 342px;
+    background-color: #f7fafa;
+    border-radius: 8px;
+  }
