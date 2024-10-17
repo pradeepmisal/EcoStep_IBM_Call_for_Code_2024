@@ -1,11 +1,20 @@
 # EcoStep: Carbon Awareness Made Easy
 
-EcoStep is a user-friendly web app that helps you easily calculate and reduce your carbon footprint.
+EcoStep is a user-friendly web application designed to help users calculate and reduce their carbon footprint. Additionally, it includes a question-answering system focused on carbon emissions and environmental topics, utilizing IBM WatsonX AI for natural language processing.
 
 ## Tech Stack
 
 - **Frontend**: React, Vite
 - **Backend**: Node.js
+- **AI & Vector Storage**: IBM WatsonX AI, FAISS, LangChain
+
+## Features
+
+- Calculate and reduce carbon footprint
+- Create and manage a vector database of carbon-related Q&A pairs
+- Utilize IBM WatsonX AI for natural language processing
+- Process and answer questions based on a carbon footprint report and pre-existing Q&A pairs
+- Implement Retrieval-Augmented Generation (RAG) for more accurate and context-aware responses
 
 ## Getting Started
 
@@ -13,9 +22,17 @@ Follow these instructions to set up EcoStep on your local machine for developmen
 
 ### Prerequisites
 
+#### For the Web Application
+
 - Node.js (version 14 or higher)
 - npm (Node Package Manager)
 - A code editor (e.g., Visual Studio Code)
+
+#### For the Q&A System
+
+- Python 3.7+
+- IBM Cloud account with WatsonX AI service
+- Required Python packages (see `requirements.txt`)
 
 ### Installation
 
@@ -23,12 +40,10 @@ Follow these instructions to set up EcoStep on your local machine for developmen
 
    ```bash
    git clone https://github.com/Tech-Avinya-07/EcoStep_Carbon-Awareness-Made-Easy.git
-   cd ecostep
+    cd EcoStep_Carbon-Awareness-Made-Easy
    ```
 
 2. **Install Dependencies**
-
-   Navigate to both the frontend and backend directories and install the necessary packages.
 
    Client-Side (Frontend):
 
@@ -44,6 +59,13 @@ Follow these instructions to set up EcoStep on your local machine for developmen
    npm install
    ```
 
+   Q&A System (Python):
+
+   ```bash
+   cd CarbonFootPrintChatbot
+   pip install -r requirements.txt
+   ```
+
 3. **Set Up Environment Variables**
 
    Create a `.env` file in the server directory and add the following variables:
@@ -56,7 +78,21 @@ Follow these instructions to set up EcoStep on your local machine for developmen
    JWT_SECRET_KEY=your_jwt_secret_key
    ```
 
+   Additionally, create a .env file in the chatbot directory with these variables:
+
+   ```plaintext
+   URL=https://us-south.ml.cloud.ibm.com
+   API_KEY=your_ibm_watson_api_key
+   PROJECT_ID=your_ibm_watsonx_project_id
+   ```
+
 4. **Run the Application**
+
+   Run the Python Chatbot:
+
+   ```bash
+   python faissibm.py
+   ```
 
    Start the backend server:
 
