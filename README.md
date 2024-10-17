@@ -78,7 +78,7 @@ Follow these instructions to set up EcoStep on your local machine for developmen
    JWT_SECRET_KEY=your_jwt_secret_key
    ```
 
-   Additionally, create a .env file in the chatbot directory with these variables:
+   create a .env file in the chatbot directory with these variables:
 
    ```plaintext
    URL=https://us-south.ml.cloud.ibm.com
