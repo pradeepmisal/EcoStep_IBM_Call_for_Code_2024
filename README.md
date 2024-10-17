@@ -40,7 +40,7 @@ Follow these instructions to set up EcoStep on your local machine for developmen
 
    ```bash
    git clone https://github.com/Tech-Avinya-07/EcoStep_Carbon-Awareness-Made-Easy.git
-    cd EcoStep_Carbon-Awareness-Made-Easy
+   cd EcoStep_Carbon-Awareness-Made-Easy
    ```
 
 2. **Install Dependencies**
