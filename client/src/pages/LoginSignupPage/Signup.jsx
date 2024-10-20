@@ -1,3 +1,4 @@
+import { API_URL } from "../../constants";
 import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import { useAuth } from "../../store/auth";
@@ -23,7 +24,7 @@ const Signup = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch(`${apiUrl}/api/user/register`, {
+      const response = await fetch(`${API_URL}/api/user/register`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
