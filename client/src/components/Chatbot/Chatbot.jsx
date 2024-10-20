@@ -7,6 +7,8 @@ const Chatbot = () => {
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState("");
 
+  const apiUrl = import.meta.env.VITE_API_URL || "http://localhost:3000";
+
   const toggleChat = () => {
     setIsOpen(!isOpen);
   };
@@ -24,20 +26,31 @@ const Chatbot = () => {
     setMessages((prev) => [...prev, userMessage]);
     setInput("");
 
+    // Show "Thinking..." message
+    const thinkingMessage = { role: "assistant", content: "Thinking..." };
+    setMessages((prev) => [...prev, thinkingMessage]);
+
     try {
-      const response = await axios.post(
-        "http://localhost:3000/api/chatbot/ask",
-        { question: input }
-      );
+      const response = await axios.post(`${apiUrl}/api/chatbot/ask`, {
+        question: input,
+      });
+      console.log(response);
+
       const botMessage = { role: "assistant", content: response.data.response };
-      setMessages((prev) => [...prev, botMessage]);
+      setMessages((prev) => {
+        const updatedMessages = prev.slice(0, -1); // Remove the "Thinking..." message
+        return [...updatedMessages, botMessage];
+      });
     } catch (error) {
       console.error("Error:", error);
       const errorMessage = {
         role: "assistant",
         content: "Sorry, something went wrong.",
       };
-      setMessages((prev) => [...prev, errorMessage]);
+      setMessages((prev) => {
+        const updatedMessages = prev.slice(0, -1); // Remove the "Thinking..." message
+        return [...updatedMessages, errorMessage];
+      });
     }
   };
 

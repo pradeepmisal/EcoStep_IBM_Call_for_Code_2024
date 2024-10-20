@@ -14,6 +14,8 @@ import MainContent from "./components/EcoHeroComponents/MainContent";
 import Chatbot from "./components/Chatbot/Chatbot";
 
 const App = () => {
+  const apiUrl = import.meta.env.VITE_API_URL || "http://localhost:3000";
+
   return (
     <div className="container">
       <BrowserRouter>
