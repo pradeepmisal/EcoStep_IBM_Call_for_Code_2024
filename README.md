@@ -94,7 +94,7 @@ Follow these instructions to set up EcoStep on your local machine for developmen
    python faissibm.py
    ```
 
-   Start the backend server:
+   Start the backend server
 
    ```bash
    npm start
