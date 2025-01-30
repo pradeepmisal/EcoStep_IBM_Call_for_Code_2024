@@ -15,11 +15,7 @@ EcoStep is a user-friendly web application designed to help users calculate and 
 - Utilize IBM WatsonX AI for natural language processing
 - Process and answer questions based on a carbon footprint report and pre-existing Q&A pairs
 - Implement Retrieval-Augmented Generation (RAG) for more accurate and context-aware responses
-## 🎥 Video Demo
 
-[![Alt text](https://img.youtube.com/vi/aRjYWDOkU6U/0.jpg)](https://youtu.be/aRjYWDOkU6U)
-
-Click the image above to watch a demo showcasing MEDI AR's healthcare-focused AR and AI solutions in action.
 
 ## Getting Started
 
